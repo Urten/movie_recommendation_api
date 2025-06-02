@@ -10,7 +10,7 @@ load_dotenv()
 
 
 client = genai.Client(
-        api_key=os.environ.get("GEMINI_API_KEY"),
+        api_key=os.getenv("GEMINI_API_KEY"),
     )
 
 async def get_movie_recommendation(payload: Payload, model_name="gemini-2.0-flash"):
