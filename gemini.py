@@ -5,6 +5,8 @@ import json
 import logging
 import asyncio
 logging.basicConfig(level=logging.INFO)
+from dotenv import load_dotenv
+load_dotenv()
 
 
 client = genai.Client(
